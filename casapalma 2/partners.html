@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Partners · Casa Palma · Miami</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 56'><rect width='40' height='56' fill='%23F2EDE3'/><path d='M20 54 C20.4 44 20.8 36 20.4 22 C20 12 20 7 20 4' stroke='%23002FA7' stroke-width='1.5' stroke-linecap='round' fill='none'/></svg>"/>
+<style>
+:root{--klein:#002FA7;--orange:#E8722A;--beige:#F2EDE3;--linen:#EDE8DF;--dark:#1C1B18;--mid:#7a7873;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Helvetica Neue',Helvetica,sans-serif;background:var(--beige);color:var(--dark);font-weight:300;}
+nav{display:flex;justify-content:space-between;align-items:center;padding:24px 48px;border-bottom:0.5px solid rgba(0,47,167,0.07);}
+.nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.nav-name{font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:300;letter-spacing:0.28em;text-transform:uppercase;color:var(--klein);opacity:0.8;}
+.back{font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--mid);text-decoration:none;}
+.back:hover{color:var(--klein);}
+.hero{padding:100px 48px 80px;position:relative;overflow:hidden;}
+.ghost-palm{position:absolute;right:-40px;top:50%;transform:translateY(-50%);opacity:0.04;pointer-events:none;}
+.eyebrow{font-size:10px;letter-spacing:0.35em;text-transform:uppercase;color:var(--mid);margin-bottom:24px;}
+.headline{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,6vw,72px);font-weight:300;line-height:1.0;color:var(--klein);margin-bottom:24px;}
+.headline em{font-style:italic;}
+.subtext{font-size:14px;line-height:1.9;color:var(--mid);max-width:560px;}
+.props{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin:64px 48px;}
+.prop{background:var(--linen);padding:48px 36px;}
+.prop:nth-child(2){background:var(--klein);color:white;}
+.prop-title{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:300;font-style:italic;margin-bottom:16px;}
+.prop-text{font-size:13px;line-height:1.8;opacity:0.65;}
+.form-section{padding:80px 48px;background:var(--linen);}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+.form-left{}
+.form-title{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,44px);font-weight:300;line-height:1.1;color:var(--klein);margin-bottom:20px;}
+.form-title em{font-style:italic;}
+.form-body{font-size:13px;color:var(--mid);line-height:1.85;margin-bottom:32px;}
+.media-btn{font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--klein);border:0.5px solid rgba(0,47,167,0.35);padding:12px 24px;text-decoration:none;display:inline-block;cursor:pointer;background:transparent;font-family:'Helvetica Neue',sans-serif;transition:all 0.3s;}
+.media-btn:hover{background:var(--klein);color:white;}
+.form-right{}
+.form-group{margin-bottom:14px;}
+.form-input{width:100%;background:rgba(255,255,255,0.7);border:0.5px solid rgba(0,47,167,0.12);padding:15px 18px;font-size:13px;color:var(--dark);font-family:'Helvetica Neue',sans-serif;font-weight:300;outline:none;transition:border-color 0.3s;}
+.form-input::placeholder{color:rgba(0,47,167,0.3);}
+.form-input:focus{border-color:rgba(0,47,167,0.3);}
+textarea.form-input{height:120px;resize:vertical;}
+.form-submit{width:100%;background:var(--klein);color:white;border:none;padding:16px;font-size:11px;letter-spacing:0.28em;text-transform:uppercase;font-family:'Helvetica Neue',sans-serif;font-weight:300;cursor:pointer;margin-top:8px;transition:opacity 0.3s;}
+.form-submit:hover{opacity:0.85;}
+.success{display:none;text-align:center;padding:40px;}
+.success-title{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;font-style:italic;color:var(--klein);margin-bottom:12px;}
+.success-sub{font-size:13px;color:var(--mid);}
+footer{padding:40px 48px;display:flex;justify-content:space-between;align-items:center;border-top:0.5px solid rgba(0,0,0,0.07);}
+.footer-press{font-size:12px;color:var(--mid);}
+.footer-press a{color:var(--klein);text-decoration:none;}
+.footer-back{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--klein);text-decoration:none;opacity:0.55;}
+.footer-back:hover{opacity:1;}
+@media(max-width:768px){
+  nav,.hero,.form-section,footer{padding-left:24px;padding-right:24px;}
+  .props{margin:48px 24px;grid-template-columns:1fr;}
+  .form-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/">
+    <svg width="18" height="28" viewBox="0 0 40 56" fill="none">
+      <path d="M20 54 C20.4 44 20.8 36 20.4 22 C20 12 20 7 20 4" stroke="#002FA7" stroke-width="1.1" stroke-linecap="round" opacity="0.6"/>
+      <path d="M20 22 C14.5 16 7 11 2 9" stroke="#002FA7" stroke-width="0.95" stroke-linecap="round" opacity="0.55"/>
+      <path d="M20 22 C25.5 16 33 11 38 9" stroke="#002FA7" stroke-width="0.95" stroke-linecap="round" opacity="0.55"/>
+      <path d="M20 22 C15.5 15 11 8 8 4" stroke="#002FA7" stroke-width="0.85" stroke-linecap="round" opacity="0.45"/>
+      <path d="M20 22 C24.5 15 29 8 32 4" stroke="#002FA7" stroke-width="0.85" stroke-linecap="round" opacity="0.45"/>
+      <path d="M20 22 C19.2 15 19.2 8 20 4" stroke="#002FA7" stroke-width="0.75" stroke-linecap="round" opacity="0.35"/>
+    </svg>
+    <div class="nav-name">Casa Palma</div>
+  </a>
+  <a class="back" href="/">← Back</a>
+</nav>
+
+<div class="hero">
+  <svg class="ghost-palm" width="500" height="700" viewBox="0 0 40 56" fill="none">
+    <path d="M20 54 C20.4 44 20.8 36 20.4 22 C20 12 20 7 20 4" stroke="#002FA7" stroke-width="1.1" stroke-linecap="round"/>
+    <path d="M20 22 C14.5 16 7 11 2 9" stroke="#002FA7" stroke-width="0.95" stroke-linecap="round"/>
+    <path d="M20 22 C25.5 16 33 11 38 9" stroke="#002FA7" stroke-width="0.95" stroke-linecap="round"/>
+    <path d="M20 22 C15.5 15 11 8 8 4" stroke="#002FA7" stroke-width="0.85" stroke-linecap="round"/>
+    <path d="M20 22 C24.5 15 29 8 32 4" stroke="#002FA7" stroke-width="0.85" stroke-linecap="round"/>
+    <path d="M20 22 C19.2 15 19.2 8 20 4" stroke="#002FA7" stroke-width="0.75" stroke-linecap="round"/>
+  </svg>
+  <div class="eyebrow">Brand partnerships</div>
+  <div class="headline">We build rooms.<br><em>You belong in them.</em></div>
+  <div class="subtext">If your brand values intimacy, taste, and genuine connection — let's talk. Casa Palma brings together the right people in the right place. We don't do noise. We do moments.</div>
+</div>
+
+<div class="props">
+  <div class="prop">
+    <div class="prop-title">The room</div>
+    <div class="prop-text" style="color:var(--mid);">25 curated guests per Drop. Vetted, intentional, high-retention. The audience brands can't buy anywhere else.</div>
+  </div>
+  <div class="prop">
+    <div class="prop-title">The content</div>
+    <div class="prop-text">Organic, editorial, never forced. The kind of content brands can't manufacture. Real moments, real people.</div>
+  </div>
+  <div class="prop" style="background:var(--linen);">
+    <div class="prop-title" style="color:var(--klein);">The connection</div>
+    <div class="prop-text" style="color:var(--mid);">Real people. Real conversations. Real brand association. Not a post — a memory.</div>
+  </div>
+</div>
+
+<div class="form-section">
+  <div class="form-grid">
+    <div class="form-left">
+      <div class="form-title">Let's <em>talk.</em></div>
+      <div class="form-body">Tell us about your brand and how you'd like to work together. We'll be in touch within 48 hours.</div>
+      <button class="media-btn" onclick="alert('Media kit available upon request. Email hello@casapalmadrops.com')">Download media kit →</button>
+      <p style="font-size:11px;color:var(--mid);margin-top:10px;opacity:0.6;">Media kit available upon request.<br>Email <a href="mailto:hello@casapalmadrops.com" style="color:var(--klein);text-decoration:none;">hello@casapalmadrops.com</a></p>
+    </div>
+    <div class="form-right">
+      <div id="partnerForm">
+        <form onsubmit="handlePartnerSubmit(event)">
+          <div class="form-group"><input class="form-input" type="text" placeholder="Full name" required></div>
+          <div class="form-group"><input class="form-input" type="text" placeholder="Brand name" required></div>
+          <div class="form-group"><input class="form-input" type="email" placeholder="Email address" required></div>
+          <div class="form-group"><input class="form-input" type="text" placeholder="What you do"></div>
+          <div class="form-group"><textarea class="form-input" placeholder="How do you want to work together?"></textarea></div>
+          <button class="form-submit" type="submit">Let's talk →</button>
+        </form>
+      </div>
+      <div class="success" id="partnerSuccess">
+        <div class="success-title">We'll be in touch. 🌴</div>
+        <div class="success-sub">Thank you for reaching out. We'll get back to you within 48 hours.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-press">For press inquiries: <a href="mailto:hello@casapalmadrops.com">hello@casapalmadrops.com</a></div>
+  <a class="footer-back" href="/">casapalmadrops.com →</a>
+</footer>
+
+<script>
+function handlePartnerSubmit(e) {
+  e.preventDefault();
+  document.getElementById('partnerForm').style.display = 'none';
+  document.getElementById('partnerSuccess').style.display = 'block';
+}
+</script>
+</body>
+</html>
