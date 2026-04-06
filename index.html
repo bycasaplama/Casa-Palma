@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Casa Palma · Not everywhere. Just the right places.</title>
 
-<!-- OG Meta Tags -->
 <meta property="og:title" content="Casa Palma · Something is coming to Miami."/>
 <meta property="og:description" content="Not everywhere. Just the right places. Curated drops across Miami."/>
 <meta property="og:image" content="https://casapalmadrops.com/og.png"/>
@@ -16,11 +15,6 @@
 <meta name="twitter:description" content="Not everywhere. Just the right places."/>
 <meta name="twitter:image" content="https://casapalmadrops.com/og.png"/>
 
-<!-- GA4 MEASUREMENT ID GOES HERE -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
-
-<!-- Favicon -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 56'><rect width='40' height='56' fill='%23F2EDE3'/><path d='M20 54 C20.4 44 20.8 36 20.4 22 C20 12 20 7 20 4' stroke='%23002FA7' stroke-width='1.5' stroke-linecap='round' fill='none'/><path d='M20 22 C14.5 16 7 11 2 9' stroke='%23002FA7' stroke-width='1.2' stroke-linecap='round' fill='none'/><path d='M20 22 C25.5 16 33 11 38 9' stroke='%23002FA7' stroke-width='1.2' stroke-linecap='round' fill='none'/><path d='M20 22 C15.5 15 11 8 8 4' stroke='%23002FA7' stroke-width='1' stroke-linecap='round' fill='none'/><path d='M20 22 C24.5 15 29 8 32 4' stroke='%23002FA7' stroke-width='1' stroke-linecap='round' fill='none'/><path d='M20 22 C19.2 15 19.2 8 20 4' stroke='%23002FA7' stroke-width='.9' stroke-linecap='round' fill='none'/></svg>"/>
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
@@ -36,10 +30,20 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
 .nav-name{font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:300;letter-spacing:0.28em;text-transform:uppercase;color:var(--klein);opacity:0.8;}
 .nav-links{display:flex;gap:32px;list-style:none;}
-.nav-links a{font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:var(--mid);text-decoration:none;transition:color 0.3s;}
+.nav-links a{font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:var(--mid);text-decoration:none;transition:color 0.3s;cursor:pointer;}
 .nav-links a:hover{color:var(--klein);}
-.nav-cta{font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--klein);border:0.5px solid rgba(0,47,167,0.4);padding:8px 20px;text-decoration:none;transition:all 0.3s;}
+.nav-cta{font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--klein);border:0.5px solid rgba(0,47,167,0.4);padding:8px 20px;text-decoration:none;transition:all 0.3s;cursor:pointer;}
 .nav-cta:hover{background:var(--klein);color:white;}
+
+/* MOBILE NAV TOGGLE */
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}
+.nav-hamburger span{display:block;width:22px;height:1px;background:var(--klein);transition:all 0.3s;}
+.mobile-menu{display:none;position:fixed;top:68px;left:0;right:0;background:rgba(242,237,227,0.98);backdrop-filter:blur(12px);z-index:99;padding:24px 24px;border-bottom:0.5px solid rgba(0,47,167,0.1);}
+.mobile-menu.open{display:block;}
+.mobile-menu ul{list-style:none;display:flex;flex-direction:column;gap:0;}
+.mobile-menu ul li a{display:block;font-size:13px;letter-spacing:0.25em;text-transform:uppercase;color:var(--mid);text-decoration:none;padding:16px 0;border-bottom:0.5px solid rgba(0,47,167,0.07);cursor:pointer;}
+.mobile-menu ul li a:hover{color:var(--klein);}
+.mobile-menu-cta{display:block;margin-top:16px;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--klein);border:0.5px solid rgba(0,47,167,0.4);padding:12px 20px;text-align:center;text-decoration:none;cursor:pointer;}
 
 /* HERO */
 .hero{min-height:100vh;background:var(--klein);color:white;display:flex;flex-direction:column;justify-content:space-between;padding:140px 48px 56px;position:relative;overflow:hidden;}
@@ -51,7 +55,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 .hero-tag{font-size:10px;letter-spacing:0.25em;text-transform:uppercase;opacity:0.22;border:0.5px solid rgba(255,255,255,0.15);padding:7px 16px;display:inline-block;}
 .hero-bottom{display:flex;justify-content:space-between;align-items:flex-end;}
 .hero-foot{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;opacity:0.2;}
-.hero-cta{font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:white;border:0.5px solid rgba(255,255,255,0.35);padding:12px 28px;text-decoration:none;transition:all 0.3s;}
+.hero-cta{font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:white;border:0.5px solid rgba(255,255,255,0.35);padding:12px 28px;text-decoration:none;transition:all 0.3s;cursor:pointer;}
 .hero-cta:hover{background:white;color:var(--klein);}
 
 /* TICKER */
@@ -77,16 +81,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 .phil-text{font-size:14px;line-height:1.85;color:rgba(255,255,255,0.6);}
 .phil-promise{font-family:'Cormorant Garamond',serif;font-size:clamp(24px,3vw,36px);font-weight:300;font-style:italic;color:rgba(255,255,255,0.4);margin-top:48px;}
 
-/* ABOUT */
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
-.about-body{font-size:14px;line-height:1.9;color:var(--mid);margin-bottom:32px;}
-.about-quote{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:300;font-style:italic;line-height:1.55;border-left:2px solid var(--orange);padding-left:24px;color:var(--dark);}
-.stats{display:flex;flex-direction:column;gap:0;}
-.stat{padding:24px 0;border-bottom:0.5px solid rgba(0,0,0,0.08);}
-.stat:first-child{border-top:0.5px solid rgba(0,0,0,0.08);}
-.stat-num{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;color:var(--klein);line-height:1;margin-bottom:6px;}
-.stat-label{font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--mid);}
-
 /* FORMAT */
 .format-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:48px;}
 .format-step{padding:40px 32px;position:relative;}
@@ -107,7 +101,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 .drops-palm{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);opacity:0.04;pointer-events:none;}
 
 /* JOIN */
-.join-section{background:var(--dark);padding:100px 48px;}
+.join-section{padding:100px 48px;}
 .join-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
 .join-title{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,5vw,58px);font-weight:300;line-height:1.05;color:white;margin-bottom:20px;}
 .join-title em{font-style:italic;color:rgba(100,140,255,0.6);}
@@ -162,8 +156,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 .team-title{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--mid);margin-bottom:6px;}
 .team-email{font-size:12px;color:var(--klein);text-decoration:none;}
 .team-email:hover{opacity:0.7;}
-.press-line{font-size:12px;color:var(--mid);margin-top:32px;line-height:1.7;}
-.press-line a{color:var(--klein);text-decoration:none;}
 
 /* FOOTER */
 footer{background:var(--beige);padding:48px;display:flex;justify-content:space-between;align-items:center;border-top:0.5px solid rgba(0,0,0,0.07);}
@@ -182,7 +174,6 @@ footer{background:var(--beige);padding:48px;display:flex;justify-content:space-b
 .cookie-manage{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--mid);text-decoration:underline;cursor:pointer;background:none;border:none;font-family:'Helvetica Neue',sans-serif;}
 
 /* ANIMATIONS */
-@keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
 .fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.8s ease,transform 0.8s ease;}
 .fade-in.visible{opacity:1;transform:translateY(0);}
 
@@ -190,13 +181,17 @@ footer{background:var(--beige);padding:48px;display:flex;justify-content:space-b
 @media(max-width:768px){
   nav{padding:18px 24px;}
   .nav-links{display:none;}
+  .nav-hamburger{display:flex;}
   .hero{padding:120px 24px 48px;}
+  .hero-tag{display:none;}
   .section{padding:72px 24px;}
-  .drops-section,.drops-content{padding:72px 24px;}
+  .drops-section{padding:72px 24px 0;}
+  .drops-content{padding:72px 24px;}
   .join-section{padding:72px 24px;}
   .faq-section,.contact-section{padding:72px 24px;}
   footer{padding:36px 24px;flex-direction:column;gap:16px;text-align:center;}
-  .phil-grid,.about-grid,.join-grid,.contact-grid{grid-template-columns:1fr;}
+  .footer-line{display:none;}
+  .phil-grid,.join-grid,.contact-grid{grid-template-columns:1fr;}
   .format-steps{grid-template-columns:1fr 1fr;}
   .cookie-banner{padding:16px 24px;flex-direction:column;gap:12px;}
   .cookie-actions{margin-left:0;}
@@ -221,13 +216,27 @@ footer{background:var(--beige);padding:48px;display:flex;justify-content:space-b
     <div class="nav-name">Casa Palma</div>
   </a>
   <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#drops">Drops</a></li>
-    <li><a href="#format">The format</a></li>
+    <li><a onclick="scrollTo('about')">About</a></li>
+    <li><a onclick="scrollTo('drops')">Drops</a></li>
+    <li><a onclick="scrollTo('format')">The format</a></li>
     <li><a href="/partners">Partners</a></li>
   </ul>
-  <a class="nav-cta" href="#join">Join the room</a>
+  <a class="nav-cta" onclick="scrollTo('join')">Join the room</a>
+  <div class="nav-hamburger" onclick="toggleMenu()" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
 </nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a onclick="mobileNav('about')">About</a></li>
+    <li><a onclick="mobileNav('drops')">Drops</a></li>
+    <li><a onclick="mobileNav('format')">The format</a></li>
+    <li><a href="/partners">Partners</a></li>
+  </ul>
+  <a class="mobile-menu-cta" onclick="mobileNav('join')">Join the room</a>
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -253,7 +262,7 @@ footer{background:var(--beige);padding:48px;display:flex;justify-content:space-b
   </div>
   <div class="hero-bottom">
     <div class="hero-foot">Casa Palma · Miami</div>
-    <a class="hero-cta" href="#join">Join the room →</a>
+    <a class="hero-cta" onclick="scrollTo('join')">Join the room →</a>
   </div>
 </section>
 
@@ -273,8 +282,8 @@ footer{background:var(--beige);padding:48px;display:flex;justify-content:space-b
   </div>
 </div>
 
-<!-- PHILOSOPHY -->
-<section class="section fade-in" style="background:var(--beige);position:relative;overflow:hidden;">
+<!-- ABOUT / PHILOSOPHY -->
+<section class="section fade-in" id="about" style="background:var(--beige);position:relative;overflow:hidden;">
   <svg style="position:absolute;right:-60px;top:50%;transform:translateY(-50%);opacity:0.05;pointer-events:none;" width="520" height="730" viewBox="0 0 40 56" fill="none">
     <path d="M20 54 C20.4 44 20.8 36 20.4 22 C20 12 20 7 20 4" stroke="#002FA7" stroke-width="1.1" stroke-linecap="round"/>
     <path d="M20 22 C14.5 16 7 11 2 9" stroke="#002FA7" stroke-width="0.95" stroke-linecap="round"/>
@@ -307,8 +316,6 @@ footer{background:var(--beige);padding:48px;display:flex;justify-content:space-b
     </div>
   </div>
 </section>
-
-
 
 <!-- FORMAT -->
 <section class="section linen fade-in" id="format">
@@ -358,41 +365,41 @@ footer{background:var(--beige);padding:48px;display:flex;justify-content:space-b
 </div>
 
 <!-- JOIN -->
-<section class="join-section fade-in" id="join" style="background:var(--beige);">
+<section class="join-section fade-in" id="join" style="background:var(--dark);">
   <div class="join-grid">
     <div>
-      <div class="sec-num" style="color:var(--mid);">04 — Join</div>
-      <div class="join-title" style="color:var(--klein);">Join<br>the <em>room.</em></div>
-      <div class="join-note-personal" style="color:var(--klein);opacity:0.6;border-left-color:var(--orange);">"We're just getting started. If you're here, you found us early — and that means something. Can't wait to have you in the room."</div>
-      <div class="join-body" style="color:var(--mid);">Fill in the form and find your place to belong.</div>
+      <div class="sec-num" style="color:rgba(255,255,255,0.3);">04 — Join</div>
+      <div class="join-title">Join<br>the <em>room.</em></div>
+      <div class="join-note-personal">"We're just getting started. If you're here, you found us early — and that means something. Can't wait to have you in the room."</div>
+      <div class="join-body">Fill in the form and find your place to belong.</div>
       <div class="join-steps">
-        <div class="join-step" style="border-bottom-color:rgba(0,47,167,0.08);"><div class="join-step-n" style="color:var(--orange);">01</div><div class="join-step-text" style="color:var(--mid);">Fill in the form — takes 60 seconds. Open to all.</div></div>
-        <div class="join-step" style="border-bottom-color:rgba(0,47,167,0.08);"><div class="join-step-n" style="color:var(--orange);">02</div><div class="join-step-text" style="color:var(--mid);">You're in. Address arrives straight to your inbox.</div></div>
-        <div class="join-step" style="border-bottom-color:rgba(0,47,167,0.08);"><div class="join-step-n" style="color:var(--orange);">03</div><div class="join-step-text" style="color:var(--mid);">Phones away. Presence on. The room does the rest.</div></div>
+        <div class="join-step"><div class="join-step-n">01</div><div class="join-step-text">Fill in the form — takes 60 seconds. Open to all.</div></div>
+        <div class="join-step"><div class="join-step-n">02</div><div class="join-step-text">You're in. Address arrives straight to your inbox.</div></div>
+        <div class="join-step"><div class="join-step-n">03</div><div class="join-step-text">Phones away. Presence on. The room does the rest.</div></div>
       </div>
     </div>
     <div>
-      <div class="waitlist-count" style="color:var(--mid);">47 people are waiting.</div>
-      <span class="form-label-top" style="color:var(--mid);">Join Drop 01 — Miami</span>
+      <div class="waitlist-count">47 people are waiting.</div>
+      <span class="form-label-top">Join Drop 01 — Miami</span>
       <div id="joinForm">
         <form onsubmit="handleJoinSubmit(event)">
-          <div class="form-group"><input class="form-input" type="text" placeholder="Full name" required style="background:rgba(0,47,167,0.04);border-color:rgba(0,47,167,0.15);color:var(--dark);"></div>
-          <div class="form-group"><input class="form-input" type="email" placeholder="Email address" required style="background:rgba(0,47,167,0.04);border-color:rgba(0,47,167,0.15);color:var(--dark);"></div>
-          <div class="form-group"><input class="form-input" type="text" placeholder="Instagram handle (optional)" style="background:rgba(0,47,167,0.04);border-color:rgba(0,47,167,0.15);color:var(--dark);"></div>
+          <div class="form-group"><input class="form-input" type="text" placeholder="Full name" required></div>
+          <div class="form-group"><input class="form-input" type="email" placeholder="Email address" required></div>
+          <div class="form-group"><input class="form-input" type="text" placeholder="Instagram handle (optional)"></div>
           <div class="form-checkboxes">
-            <span class="form-check-label" style="color:var(--mid);">What draws you here?</span>
-            <label class="check-item"><input type="checkbox"><span style="color:var(--mid);">The wellness experience</span></label>
-            <label class="check-item"><input type="checkbox"><span style="color:var(--mid);">The community</span></label>
-            <label class="check-item"><input type="checkbox"><span style="color:var(--mid);">The aesthetic</span></label>
-            <label class="check-item"><input type="checkbox"><span style="color:var(--mid);">All of it</span></label>
+            <span class="form-check-label">What draws you here?</span>
+            <label class="check-item"><input type="checkbox"><span>The wellness experience</span></label>
+            <label class="check-item"><input type="checkbox"><span>The community</span></label>
+            <label class="check-item"><input type="checkbox"><span>The aesthetic</span></label>
+            <label class="check-item"><input type="checkbox"><span>All of it</span></label>
           </div>
-          <button class="form-submit" type="submit" style="background:var(--klein);">Join the room →</button>
+          <button class="form-submit" type="submit">Join the room →</button>
         </form>
       </div>
       <div class="success-msg" id="successMsg">
-        <div class="success-title" style="color:var(--klein);">You're in. Stay close. 🌴</div>
-        <div class="success-sub" style="color:var(--mid);">The address arrives straight to your inbox on the day of the Drop.</div>
-        <button class="share-btn" style="color:var(--klein);border-color:rgba(0,47,167,0.3);" onclick="shareLink()">Know someone who belongs here? Share Casa Palma →</button>
+        <div class="success-title">You're in. Stay close. 🌴</div>
+        <div class="success-sub">The address arrives straight to your inbox on the day of the Drop.</div>
+        <button class="share-btn" onclick="shareLink()">Know someone who belongs here? Share Casa Palma →</button>
       </div>
     </div>
   </div>
@@ -439,7 +446,6 @@ footer{background:var(--beige);padding:48px;display:flex;justify-content:space-b
       <div class="contact-general">
         <div class="contact-label">General inquiries</div>
         <div class="contact-email"><a href="mailto:hello@casapalmadrops.com">hello@casapalmadrops.com</a></div>
-
       </div>
       <div class="contact-label" style="margin-bottom:16px;">The team</div>
       <div class="team-member">
@@ -495,17 +501,37 @@ footer{background:var(--beige);padding:48px;display:flex;justify-content:space-b
   </div>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
+// Smooth scroll to section
+function scrollTo(id) {
+  const el = document.getElementById(id);
+  if (el) {
+    const offset = 80;
+    const top = el.getBoundingClientRect().top + window.pageYOffset - offset;
+    window.scrollTo({ top: top, behavior: 'smooth' });
+  }
+}
+
+// Mobile menu
+function toggleMenu() {
+  const menu = document.getElementById('mobileMenu');
+  menu.classList.toggle('open');
+}
+
+function mobileNav(id) {
+  document.getElementById('mobileMenu').classList.remove('open');
+  setTimeout(() => scrollTo(id), 100);
+}
+
 // Scroll animations
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('visible'); });
-}, { threshold: 0.1 });
+}, { threshold: 0.05 });
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
 // FAQ
 function toggleFaq(el) {
-  const item = el.parentElement;
-  item.classList.toggle('open');
+  el.parentElement.classList.toggle('open');
 }
 
 // Join form
