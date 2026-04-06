@@ -233,6 +233,16 @@ footer{background:var(--beige);padding:48px;display:flex;justify-content:space-b
 <section class="hero">
   <div class="hero-ring" style="width:600px;height:600px;top:-250px;right:-200px;"></div>
   <div class="hero-ring" style="width:300px;height:300px;bottom:-100px;left:-100px;"></div>
+  <svg style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);opacity:0.06;pointer-events:none;width:min(700px,90vw);height:auto;" viewBox="0 0 40 56" fill="none" preserveAspectRatio="xMidYMid meet">
+    <path d="M20 54 C20.4 44 20.8 36 20.4 22 C20 12 20 7 20 4" stroke="white" stroke-width="1.1" stroke-linecap="round"/>
+    <path d="M20 22 C14.5 16 7 11 2 9" stroke="white" stroke-width="0.95" stroke-linecap="round"/>
+    <path d="M2 9 C-0.5 12.5 0.5 16 2.5 18" stroke="white" stroke-width="0.5" stroke-linecap="round"/>
+    <path d="M20 22 C25.5 16 33 11 38 9" stroke="white" stroke-width="0.95" stroke-linecap="round"/>
+    <path d="M38 9 C40.5 12.5 39.5 16 37.5 18" stroke="white" stroke-width="0.5" stroke-linecap="round"/>
+    <path d="M20 22 C15.5 15 11 8 8 4" stroke="white" stroke-width="0.85" stroke-linecap="round"/>
+    <path d="M20 22 C24.5 15 29 8 32 4" stroke="white" stroke-width="0.85" stroke-linecap="round"/>
+    <path d="M20 22 C19.2 15 19.2 8 20 4" stroke="white" stroke-width="0.75" stroke-linecap="round"/>
+  </svg>
   <div style="display:flex;justify-content:space-between;align-items:flex-start;">
     <div>
       <div class="hero-eyebrow">Miami · Est. 2026</div>
@@ -264,47 +274,41 @@ footer{background:var(--beige);padding:48px;display:flex;justify-content:space-b
 </div>
 
 <!-- PHILOSOPHY -->
-<section class="section dark fade-in">
-  <div class="sec-num" style="color:rgba(255,255,255,0.3);">Our philosophy</div>
-  <div class="phil-grid">
+<section class="section fade-in" style="background:var(--beige);position:relative;overflow:hidden;">
+  <svg style="position:absolute;right:-60px;top:50%;transform:translateY(-50%);opacity:0.05;pointer-events:none;" width="520" height="730" viewBox="0 0 40 56" fill="none">
+    <path d="M20 54 C20.4 44 20.8 36 20.4 22 C20 12 20 7 20 4" stroke="#002FA7" stroke-width="1.1" stroke-linecap="round"/>
+    <path d="M20 22 C14.5 16 7 11 2 9" stroke="#002FA7" stroke-width="0.95" stroke-linecap="round"/>
+    <path d="M2 9 C-0.5 12.5 0.5 16 2.5 18" stroke="#002FA7" stroke-width="0.5" stroke-linecap="round"/>
+    <path d="M20 22 C25.5 16 33 11 38 9" stroke="#002FA7" stroke-width="0.95" stroke-linecap="round"/>
+    <path d="M38 9 C40.5 12.5 39.5 16 37.5 18" stroke="#002FA7" stroke-width="0.5" stroke-linecap="round"/>
+    <path d="M20 22 C15.5 15 11 8 8 4" stroke="#002FA7" stroke-width="0.85" stroke-linecap="round"/>
+    <path d="M20 22 C24.5 15 29 8 32 4" stroke="#002FA7" stroke-width="0.85" stroke-linecap="round"/>
+    <path d="M20 22 C19.2 15 19.2 8 20 4" stroke="#002FA7" stroke-width="0.75" stroke-linecap="round"/>
+  </svg>
+  <div class="sec-num" style="color:var(--mid);position:relative;z-index:1;">Our philosophy</div>
+  <div class="phil-grid" style="position:relative;z-index:1;">
     <div>
-      <div class="phil-quote">"The right room changes everything."</div>
-      <div class="phil-promise">You walk in curious.<br>You leave belonging.</div>
+      <div class="phil-quote" style="color:var(--klein);">"The right room changes everything."</div>
+      <div class="phil-promise" style="color:var(--klein);opacity:0.5;">You walk in curious.<br>You leave belonging.</div>
     </div>
     <div class="phil-blocks">
-      <div class="phil-block">
-        <div class="phil-label">The belief</div>
-        <div class="phil-text">When you put the right people together — with intention, with taste, with care — something happens that you can't manufacture or replicate. You just feel it.</div>
+      <div class="phil-block" style="border-bottom-color:rgba(0,47,167,0.1);">
+        <div class="phil-label" style="color:var(--mid);">The belief</div>
+        <div class="phil-text" style="color:var(--klein);opacity:0.7;">When you put the right people together, with intention, with taste, with care, something happens that you can't manufacture or replicate. You just feel it.</div>
       </div>
-      <div class="phil-block">
-        <div class="phil-label">The approach</div>
-        <div class="phil-text">Less is more. Every detail is deliberate. The ribbon on your wrist, the soft music, the person you met by the door — nothing is accidental. Casa Palma designs for feeling, not spectacle.</div>
+      <div class="phil-block" style="border-bottom-color:rgba(0,47,167,0.1);">
+        <div class="phil-label" style="color:var(--mid);">The approach</div>
+        <div class="phil-text" style="color:var(--klein);opacity:0.7;">Less is more. Every detail is deliberate. The ribbon on your wrist, the soft music, the person you met by the door, nothing is accidental. Casa Palma designs for feeling, not spectacle.</div>
       </div>
-      <div class="phil-block">
-        <div class="phil-label">The values</div>
-        <div class="phil-text">Intimacy over scale. Quality over quantity. Presence over performance. Connection over networking. The right moment over the right number.</div>
+      <div class="phil-block" style="border-bottom-color:rgba(0,47,167,0.1);">
+        <div class="phil-label" style="color:var(--mid);">The values</div>
+        <div class="phil-text" style="color:var(--klein);opacity:0.7;">Intimacy over scale, quality over quantity, presence over performance, connection over networking, the right moment over the right number.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section class="section fade-in" id="about">
-  <div class="sec-num">01 — About</div>
-  <div class="about-grid">
-    <div>
-      <div class="sec-title">The kind of moment<br>you don't post about.<br><em>You just remember.</em></div>
-      <div class="about-body">Casa Palma is a series of curated drops across Miami. Open to all. Designed with intention — from the arrival to the afterglow. Wellness, ritual, connection.</div>
-      <div class="about-quote">"Not a party. Not a network. A room."</div>
-    </div>
-    <div class="stats">
-      <div class="stat"><div class="stat-num">25</div><div class="stat-label">Seats per drop — never more</div></div>
-      <div class="stat"><div class="stat-num">4</div><div class="stat-label">Drop series launching 2026</div></div>
-      <div class="stat"><div class="stat-num">24h</div><div class="stat-label">Location drops before the event</div></div>
-      <div class="stat"><div class="stat-num">01</div><div class="stat-label">City first — Miami</div></div>
-    </div>
-  </div>
-</section>
+
 
 <!-- FORMAT -->
 <section class="section linen fade-in" id="format">
@@ -326,7 +330,7 @@ footer{background:var(--beige);padding:48px;display:flex;justify-content:space-b
       <div class="step-t" style="color:var(--dark);">Connection</div>
       <div class="step-d" style="color:var(--mid);">The room opens up.</div>
     </div>
-    <div class="format-step fs-dark">
+    <div class="format-step fs-klein">
       <div class="step-n" style="color:white;">04</div>
       <div class="step-t" style="color:rgba(255,255,255,0.7);">The afterglow</div>
       <div class="step-d" style="color:rgba(255,255,255,0.5);">Something stays with you.</div>
@@ -354,43 +358,41 @@ footer{background:var(--beige);padding:48px;display:flex;justify-content:space-b
 </div>
 
 <!-- JOIN -->
-<section class="join-section fade-in" id="join">
+<section class="join-section fade-in" id="join" style="background:var(--beige);">
   <div class="join-grid">
     <div>
-      <div class="sec-num" style="color:rgba(255,255,255,0.3);">04 — Join</div>
-      <div class="join-title">Join<br>the <em>room.</em></div>
-      <div class="join-note-personal">"We're just getting started. If you're here, you found us early — and that means something. Can't wait to have you in the room."</div>
-      <div class="join-body">Fill in the form and find your place to belong.</div>
+      <div class="sec-num" style="color:var(--mid);">04 — Join</div>
+      <div class="join-title" style="color:var(--klein);">Join<br>the <em>room.</em></div>
+      <div class="join-note-personal" style="color:var(--klein);opacity:0.6;border-left-color:var(--orange);">"We're just getting started. If you're here, you found us early — and that means something. Can't wait to have you in the room."</div>
+      <div class="join-body" style="color:var(--mid);">Fill in the form and find your place to belong.</div>
       <div class="join-steps">
-        <div class="join-step"><div class="join-step-n">01</div><div class="join-step-text">Fill in the form — takes 60 seconds. Open to all.</div></div>
-        <div class="join-step"><div class="join-step-n">02</div><div class="join-step-text">You're in. Address arrives straight to your inbox.</div></div>
-        <div class="join-step"><div class="join-step-n">03</div><div class="join-step-text">The address is announced on the day. You show up.</div></div>
-        <div class="join-step"><div class="join-step-n">04</div><div class="join-step-text">Phones away. Presence on. The room does the rest.</div></div>
+        <div class="join-step" style="border-bottom-color:rgba(0,47,167,0.08);"><div class="join-step-n" style="color:var(--orange);">01</div><div class="join-step-text" style="color:var(--mid);">Fill in the form — takes 60 seconds. Open to all.</div></div>
+        <div class="join-step" style="border-bottom-color:rgba(0,47,167,0.08);"><div class="join-step-n" style="color:var(--orange);">02</div><div class="join-step-text" style="color:var(--mid);">You're in. Address arrives straight to your inbox.</div></div>
+        <div class="join-step" style="border-bottom-color:rgba(0,47,167,0.08);"><div class="join-step-n" style="color:var(--orange);">03</div><div class="join-step-text" style="color:var(--mid);">Phones away. Presence on. The room does the rest.</div></div>
       </div>
     </div>
     <div>
-      <div class="waitlist-count">47 people are waiting.</div>
-      <span class="form-label-top">Join Drop 01 — Miami</span>
+      <div class="waitlist-count" style="color:var(--mid);">47 people are waiting.</div>
+      <span class="form-label-top" style="color:var(--mid);">Join Drop 01 — Miami</span>
       <div id="joinForm">
         <form onsubmit="handleJoinSubmit(event)">
-          <div class="form-group"><input class="form-input" type="text" placeholder="Full name" required></div>
-          <div class="form-group"><input class="form-input" type="email" placeholder="Email address" required></div>
-          <div class="form-group"><input class="form-input" type="text" placeholder="Instagram handle (optional)"></div>
+          <div class="form-group"><input class="form-input" type="text" placeholder="Full name" required style="background:rgba(0,47,167,0.04);border-color:rgba(0,47,167,0.15);color:var(--dark);"></div>
+          <div class="form-group"><input class="form-input" type="email" placeholder="Email address" required style="background:rgba(0,47,167,0.04);border-color:rgba(0,47,167,0.15);color:var(--dark);"></div>
+          <div class="form-group"><input class="form-input" type="text" placeholder="Instagram handle (optional)" style="background:rgba(0,47,167,0.04);border-color:rgba(0,47,167,0.15);color:var(--dark);"></div>
           <div class="form-checkboxes">
-            <span class="form-check-label">What draws you here?</span>
-            <label class="check-item"><input type="checkbox"><span>The wellness experience</span></label>
-            <label class="check-item"><input type="checkbox"><span>The community</span></label>
-            <label class="check-item"><input type="checkbox"><span>The aesthetic</span></label>
-            <label class="check-item"><input type="checkbox"><span>All of it</span></label>
+            <span class="form-check-label" style="color:var(--mid);">What draws you here?</span>
+            <label class="check-item"><input type="checkbox"><span style="color:var(--mid);">The wellness experience</span></label>
+            <label class="check-item"><input type="checkbox"><span style="color:var(--mid);">The community</span></label>
+            <label class="check-item"><input type="checkbox"><span style="color:var(--mid);">The aesthetic</span></label>
+            <label class="check-item"><input type="checkbox"><span style="color:var(--mid);">All of it</span></label>
           </div>
-          <button class="form-submit" type="submit">Join the room →</button>
-          <div class="form-note">Limited seats per drop. Open to all. The address arrives when you sign up.</div>
+          <button class="form-submit" type="submit" style="background:var(--klein);">Join the room →</button>
         </form>
       </div>
       <div class="success-msg" id="successMsg">
-        <div class="success-title">You're in. Stay close. 🌴</div>
-        <div class="success-sub">The address arrives straight to your inbox on the day of the Drop.</div>
-        <button class="share-btn" onclick="shareLink()">Know someone who belongs here? Share Casa Palma →</button>
+        <div class="success-title" style="color:var(--klein);">You're in. Stay close. 🌴</div>
+        <div class="success-sub" style="color:var(--mid);">The address arrives straight to your inbox on the day of the Drop.</div>
+        <button class="share-btn" style="color:var(--klein);border-color:rgba(0,47,167,0.3);" onclick="shareLink()">Know someone who belongs here? Share Casa Palma →</button>
       </div>
     </div>
   </div>
@@ -436,20 +438,19 @@ footer{background:var(--beige);padding:48px;display:flex;justify-content:space-b
     <div>
       <div class="contact-general">
         <div class="contact-label">General inquiries</div>
-        <div class="contact-email"><a href="mailto:hello@casapalmadrops.com">hello@casapalmadrops.com</a></div>
+        <div class="contact-email"><a href="/cdn-cgi/l/email-protection#0169646d6d6e416260726071606d6c6065736e71722f626e6c"><span class="__cf_email__" data-cfemail="761e131a1a19361517051706171a1b1712041906055815191b">[email&#160;protected]</span></a></div>
       </div>
       <div class="contact-label" style="margin-bottom:16px;">The team</div>
       <div class="team-member">
         <div class="team-name">Paz Dalceggio</div>
         <div class="team-title">Co-Founder & Creative Director</div>
-        <a class="team-email" href="mailto:paz@casapalmadrops.com">paz@casapalmadrops.com</a>
+        <a class="team-email" href="/cdn-cgi/l/email-protection#5b2b3a211b383a283a2b3a37363a3f29342b2875383436"><span class="__cf_email__" data-cfemail="3141504b715250425041505d5c5055435e41421f525e5c">[email&#160;protected]</span></a>
       </div>
       <div class="team-member">
         <div class="team-name">Natalie Sotero</div>
         <div class="team-title">Co-Founder · Operations & Logistics</div>
-        <a class="team-email" href="mailto:natalie@casapalmadrops.com">natalie@casapalmadrops.com</a>
+        <a class="team-email" href="/cdn-cgi/l/email-protection#a4cac5d0c5c8cdc1e4c7c5d7c5d4c5c8c9c5c0d6cbd4d78ac7cbc9"><span class="__cf_email__" data-cfemail="5d333c293c3134381d3e3c2e3c2d3c31303c392f322d2e733e3230">[email&#160;protected]</span></a>
       </div>
-      <div class="press-line">For press inquiries: <a href="mailto:hello@casapalmadrops.com">hello@casapalmadrops.com</a></div>
     </div>
     <div>
       <div class="contact-label" style="margin-bottom:16px;">Work with us</div>
@@ -493,7 +494,7 @@ footer{background:var(--beige);padding:48px;display:flex;justify-content:space-b
   </div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // Scroll animations
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('visible'); });
@@ -509,27 +510,4 @@ function toggleFaq(el) {
 // Join form
 function handleJoinSubmit(e) {
   e.preventDefault();
-  document.getElementById('joinForm').style.display = 'none';
-  document.getElementById('successMsg').style.display = 'block';
-}
-
-// Share
-function shareLink() {
-  navigator.clipboard.writeText('https://casapalmadrops.com').then(() => {
-    document.querySelector('.share-btn').textContent = 'Link copied ✓';
-  });
-}
-
-// Cookie banner
-window.addEventListener('load', () => {
-  if(!localStorage.getItem('cookiesAccepted')) {
-    setTimeout(() => document.getElementById('cookieBanner').classList.add('show'), 1500);
-  }
-});
-function acceptCookies() {
-  localStorage.setItem('cookiesAccepted', 'true');
-  document.getElementById('cookieBanner').classList.remove('show');
-}
-</script>
-</body>
-</html>
+  document.
