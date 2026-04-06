@@ -510,4 +510,27 @@ function toggleFaq(el) {
 // Join form
 function handleJoinSubmit(e) {
   e.preventDefault();
-  document.
+  document.getElementById('joinForm').style.display = 'none';
+  document.getElementById('successMsg').style.display = 'block';
+}
+
+// Share
+function shareLink() {
+  navigator.clipboard.writeText('https://casapalmadrops.com').then(() => {
+    document.querySelector('.share-btn').textContent = 'Link copied ✓';
+  });
+}
+
+// Cookie banner
+window.addEventListener('load', () => {
+  if(!localStorage.getItem('cookiesAccepted')) {
+    setTimeout(() => document.getElementById('cookieBanner').classList.add('show'), 1500);
+  }
+});
+function acceptCookies() {
+  localStorage.setItem('cookiesAccepted', 'true');
+  document.getElementById('cookieBanner').classList.remove('show');
+}
+</script>
+</body>
+</html>
