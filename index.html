@@ -216,12 +216,12 @@ footer{background:var(--beige);padding:48px;display:flex;justify-content:space-b
     <div class="nav-name">Casa Palma</div>
   </a>
   <ul class="nav-links">
-    <li><a onclick="scrollTo('about')">About</a></li>
-    <li><a onclick="scrollTo('drops')">Drops</a></li>
-    <li><a onclick="scrollTo('format')">The format</a></li>
+    <li><a onclick="smoothScrollTo('about')">About</a></li>
+    <li><a onclick="smoothScrollTo('drops')">Drops</a></li>
+    <li><a onclick="smoothScrollTo('format')">The format</a></li>
     <li><a href="/partners">Partners</a></li>
   </ul>
-  <a class="nav-cta" onclick="scrollTo('join')">Join the room</a>
+  <a class="nav-cta" onclick="smoothScrollTo('join')">Join the room</a>
   <div class="nav-hamburger" onclick="toggleMenu()" id="hamburger">
     <span></span><span></span><span></span>
   </div>
@@ -262,7 +262,7 @@ footer{background:var(--beige);padding:48px;display:flex;justify-content:space-b
   </div>
   <div class="hero-bottom">
     <div class="hero-foot">Casa Palma · Miami</div>
-    <a class="hero-cta" onclick="scrollTo('join')">Join the room →</a>
+    <a class="hero-cta" onclick="smoothScrollTo('join')">Join the room →</a>
   </div>
 </section>
 
@@ -503,7 +503,7 @@ footer{background:var(--beige);padding:48px;display:flex;justify-content:space-b
 
 <script>
 // Smooth scroll to section
-function scrollTo(id) {
+function smoothScrollTo(id) {
   const el = document.getElementById(id);
   if (el) {
     const offset = 80;
@@ -520,7 +520,7 @@ function toggleMenu() {
 
 function mobileNav(id) {
   document.getElementById('mobileMenu').classList.remove('open');
-  setTimeout(() => scrollTo(id), 100);
+  setTimeout(() => smoothScrollTo(id), 100);
 }
 
 // Scroll animations
